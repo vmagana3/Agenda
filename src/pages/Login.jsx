@@ -31,33 +31,31 @@ export default function Login(){
         <div className="LoginContainer">
             <form className='formContainer rounded p-5'>
                 <div className='d-flex justify-content-start align-items-end mb-3'>
-                    <ion-icon name="person"/>         
+                    <ion-icon name="person" className="" id="iconMain"/>         
                     <p className='m-1 text-white'>Personal Agenda</p>           
                 </div>                
-                <div className="form-group">                    
-                    <input
-                        type="email"
-                        name='email'
-                        className="form-control"
-                        id="exampleInputEmail1"
-                        aria-describedby="emailHelp" 
-                        placeholder="Enter email"
-                        onChange={catchInputs}
-                    />                    
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </div>
+                    </div>
+                    <input type="email" name="email" class="form-control" placeholder="Enter email" onChange={catchInputs}/>                    
                 </div>
-                <div className="form-group">                    
-                    <input
-                        type="password"
-                        name='password'
-                        className="form-control"
-                        id="exampleInputPassword1"
-                        placeholder="Password"
-                        onChange={catchInputs}
-                    />
+
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <ion-icon name="bag-outline"></ion-icon>
+                        </div>
+                    </div>
+                    <input type="password" name="password" class="form-control" placeholder="Password" onChange={catchInputs}/>                    
                 </div>
+                
                 <div className='d-flex justify-content-end'>
                     <button type="submit" className="btn btn-success w-100" onClick={Login}>Login</button>
-                </div>                
+                </div>  
+                             
             </form>
         </div>
     )

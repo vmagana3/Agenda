@@ -12,11 +12,8 @@
     .formContainer{
         width: 30%;
         background-color: $PowerBlue;
-
-        input{
-            font-size: smaller;
-        }
-        ion-icon{                        
+        
+        #iconMain{                        
             color: white;
             font-size: 88px;
         }
@@ -24,6 +21,13 @@
         .button{
             background-color: $GrayWhite;
             font-weight: 100;
+        }
+
+        .input-group{                                                  
+            input{                
+                font-size: small;
+                border: none;            
+            }
         }
     }
 }
