@@ -1,0 +1,29 @@
+//Colors
+@import 'colors';
+
+.LoginContainer{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $GrayWhite;
+
+    .formContainer{
+        width: 30%;
+        background-color: $PowerBlue;
+
+        input{
+            font-size: smaller;
+        }
+        ion-icon{                        
+            color: white;
+            font-size: 88px;
+        }
+
+        .button{
+            background-color: $GrayWhite;
+            font-weight: 100;
+        }
+    }
+}
