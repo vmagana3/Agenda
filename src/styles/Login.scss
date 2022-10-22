@@ -5,29 +5,64 @@
     width: 100vw;
     height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: $GrayWhite;
+    justify-content: space-around;
+    align-items: center;    
 
     .formContainer{
-        width: 30%;
-        background-color: $PowerBlue;
-        
-        #iconMain{                        
-            color: white;
-            font-size: 88px;
-        }
-
-        .button{
-            background-color: $GrayWhite;
-            font-weight: 100;
-        }
-
-        .input-group{                                                  
-            input{                
-                font-size: small;
-                border: none;            
+        width: 50%;  
+        height: 100%;      
+        display: flex;  
+        justify-items: center;
+        align-items: center;
+        background-color: $GrayWhite;
+        padding: 7%;        
+        form{
+            width: 100%;
+            height: auto;
+            background-color: $PowerBlue;
+            #iconMain{                        
+                color: white;
+                font-size: 88px;
             }
-        }
+    
+            .button{
+                background-color: $GrayWhite;
+                font-weight: 100;                
+            }
+    
+            .input-group{                                                  
+                input{                
+                    font-size: small;
+                    border: none;            
+                }
+            }
+            
+            .registerTextContainer{                 
+                font-size: small;
+                font-weight: 200;
+                color: $GrayWhite;
+                a{
+                    font-weight:bold;
+                    color: $GrayWhite;
+                    text-decoration: none;
+                }
+            }
+        }      
     }
+    
+    .illustrationContainer{
+        width: 50%;
+        height: 100%;        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .title{
+            width: 80%;
+            font-weight: 100;                                  
+        }
+        .LoginIllustration{
+            width: 80%;                              
+        }
+    }    
 }
